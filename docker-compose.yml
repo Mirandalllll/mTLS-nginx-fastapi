@@ -1,0 +1,18 @@
+version: '3'
+services:
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - fastapi
+
+  fastapi:
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile.app
+    ports:
+      - "8000:8000"

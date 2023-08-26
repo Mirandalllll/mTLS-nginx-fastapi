@@ -1,0 +1,12 @@
+FROM nginx:latest
+
+# Copy your modified nginx.conf to the container
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Copy SSL certificates and CA certificate
+COPY certs/ /etc/nginx/certs/
+
+EXPOSE 80
+EXPOSE 443
+
+CMD ["nginx", "-g", "daemon off;"]
