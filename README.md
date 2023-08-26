@@ -6,12 +6,14 @@ This project is a Docker environment used for experimenting with mTLS in nginx. 
 2. Docker is required, the entire project runs inside of Docker.
 3. Create certificates using OpenSSL or any certificate creation tool of your choice. You will need the following:
    ```
+   {
     ca.pem
     ca-key.pem
     server.pem
     server-key.pem
     client.pem
     client-key.pem
+   }
    ```
 4. Inspect the nginx configuration file found in the nginx folder. If you would like to use an existing domain that you own. You will need to edit this file and replace localhost with the correct domain and/or IP address.
 5. Run the Docker container by navigating to the base directory and running `$docker-compose up --build`. This will build and run the container.
