@@ -15,6 +15,7 @@ This project is a Docker environment used for experimenting with mTLS in nginx. 
     client-key.pem
    }
    ```
+   Place these files in the nginx/certs/ folder.
 4. Inspect the nginx configuration file found in the nginx folder. If you would like to use an existing domain that you own. You will need to edit this file and replace localhost with the correct domain and/or IP address.
 5. Run the Docker container by navigating to the base directory and running `$docker-compose up --build`. This will build and run the container.
 6. In order to pass the client certificate verification when navigating to the server you must first upload your client certificate chain to your browser choice in .p12 format. Once this is completed, you may also want to upload your CA certificate chain in .p12 format to your browser of choice. Consult your browser for instructions on how to upload these certificate chains.
