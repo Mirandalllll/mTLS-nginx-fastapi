@@ -1,5 +1,5 @@
 # mTLS-nginx-fastapi
-This project is a Docker environment used for experimenting with mTLS in nginx. Nginx serves as a reverse proxy for FastAPI in this implementation.
+This project is a Docker environment used for experimenting with mTLS in nginx. Nginx serves as a reverse proxy for FastAPI in this implementation. This project was created when researching the user experience with TLS Client Authentication and mTLS. It was later applied to an actual server accessed by students in the course COSC483/583 Applied Cryptography at the Univeristy of Tennessee, Knoxville for data collection.
 
 ## How to Setup
 1. Clone this repository
